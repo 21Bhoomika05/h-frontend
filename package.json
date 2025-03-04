@@ -1,0 +1,53 @@
+{
+  "name": "AidForge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "auth0-js": "^9.28.0",
+    "axios": "^0.21.4",
+    "dotenv-webpack": "^8.1.0",
+    "ethers": "^5.8.0",
+    "firebase": "^9.23.0",
+    "process": "^0.11.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.20.0",
+    "react-scripts": "^4.0.3",
+    "react-test-renderer": "^18.3.1",
+    "web3": "^1.8.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-env": "^7.26.8",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^11.2.7",
+    "babel-jest": "^26.6.3",
+    "hardhat": "^2.22.18",
+    "jest-environment-jsdom": "^26.6.2",
+    "prettier": "^3.5.1",
+    "truffle": "^5.11.5"
+  },
+  "scripts": {
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build"
+  },
+  "jest": {
+    "preset": "react",
+    "setupFilesAfterEnv": [
+      "<rootDir>/.jest/jest.setup.js"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
